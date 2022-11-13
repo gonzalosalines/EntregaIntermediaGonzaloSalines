@@ -17,6 +17,7 @@ class Jugador(models.Model):
     edad= models.IntegerField()
     puesto= models.CharField(max_length=30)
 
+#create entrenador
 class Entrenador(models.Model):
     nombre= models.CharField(max_length=35)
     apellido= models.CharField(max_length=35)
