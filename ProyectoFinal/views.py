@@ -7,7 +7,7 @@ from django.template import loader # es realmente necesario?
 # Create your views here.
 
 def inicio(request):
-    return render(request, "ProyectoFinal/base.html")
+    return render(request, "appcoder/index.html")
 
 def jugadores(request):
 
