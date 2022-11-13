@@ -1,0 +1,25 @@
+{% extends 'ProyectoFinal/base.html' %}
+
+
+{% block contenido %}
+
+<form method="get">
+
+    <p>
+        Nombre Jugador: <input type="text" name="nombre_jugador">
+    </p>
+    <input type="submit" value="Buscar">
+</form>
+
+
+{% if listado_jugadores %}
+
+<ul>
+    {% for jugador in listado_jugadores %}
+    <li>{{jugador.nombre}} {{jugador.apellido}} {{jugador.edad}} {{jugador.puesto}}</li>
+    {% endfor %}
+</ul>
+
+{% endif %}
+
+{% endblock %}
