@@ -5,6 +5,6 @@ from ProyectoFinal import views   #posiblemente redundante
 
 urlpatterns = [
     path("inicio/", inicio, name="coder-inicio"),
-    path("estudiantes/", jugadores, name="coder-jugadores"),
+    path("jugadores/", jugadores, name="coder-jugadores"),
     
 ]
