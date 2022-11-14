@@ -67,7 +67,7 @@ def buscar_equipo(request):
         if nombre_equipo == "":
             equipos = []
         else:
-            equipos = Equipo.objects.filter(nombre__icontains=nombre_equipo)
+            equipos = Equipo.objects.filter(club__icontains=nombre_equipo)
         return render(request, "ProyectoFinal/busqueda_equipos.html", {"listado_equipos": equipos})
 
     return render(request, "ProyectoFinal/busqueda_equipos.html", {"listado_equipos": []})    
