@@ -85,5 +85,5 @@ def creacion_entrenadores(request):
             entrenador = Entrenador(nombre=data["nombre"], apellido=data["apellido"], email=data["email"])
             entrenador.save()
 
-    formulario = JugadorFormulario()
+    formulario = EntrenadorFormulario()
     return render(request, "ProyectoFinal/entrenador_formulario.html", {"formulario": formulario})
