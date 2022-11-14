@@ -71,3 +71,19 @@ def buscar_equipo(request):
         return render(request, "ProyectoFinal/busqueda_equipos.html", {"listado_equipos": equipos})
 
     return render(request, "ProyectoFinal/busqueda_equipos.html", {"listado_equipos": []})    
+
+def creacion_entrenadores(request):
+
+    if request.method == "POST":
+        formulario = EntrenadorFormulario(request.POST)
+        
+        if formulario.is_valid():
+            # Accedemos al diccionario que contiene
+            # la informacion del formulario
+            data = formulario.cleaned_data
+
+            entrenador = Entrenador(nombre=data["nombre"], apellido=data["apellido"], email=data["email"])
+            entrenador.save()
+
+    formulario = JugadorFormulario()
+    return render(request, "ProyectoFinal/entrenador_formulario.html", {"formulario": formulario})
