@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from ProyectoFinal.models import Equipo, Jugador, Entrenador
-from ProyectoFinal.forms import JugadorFormulario, EquipoFormulario
+from ProyectoFinal.forms import JugadorFormulario, EquipoFormulario, EntrenadorFormulario
 from django.shortcuts import render
 from django.template import loader # es realmente necesario?
 
