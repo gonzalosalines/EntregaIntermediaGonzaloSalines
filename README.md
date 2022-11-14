@@ -12,7 +12,9 @@
 
 ## Características de la aplicación
 `Alta de jugadores`: Agregar Jugadores a la base de datos
+
 -Edad
+
 -Puesto
 
 
@@ -25,10 +27,14 @@
 <li>Django Framework</li>
 <li>HTML</li>
 <li>CSS</li>
+
 ## Personas Contribuyentes
+
 <p> Por el momento no estamos aceptando contribuyentes <p>
 ## Personas-Desarrolladores del Proyecto
+ 
 *Gonzalo salines*
+ 
 ## Licencia
  * Pendiente*
 
