@@ -42,6 +42,8 @@ def buscar_jugadores(request):
 
     return render(request, "ProyectoFinal/busqueda_jugador.html", {"listado_jugadores": []})
 
+    
+
 def creacion_equipo(request):
 
     if request.method == "POST":
@@ -57,3 +59,15 @@ def creacion_equipo(request):
 
     formulario = EquipoFormulario()
     return render(request, "ProyectoFinal/equipo_formulario.html", {"formulario": formulario})
+
+def buscar_equipo(request):
+#creacion de buscador
+    if request.GET:
+        nombre_equipo = request.GET.get("nombre_equipo", "")
+        if nombre_equipo == "":
+            equipos = []
+        else:
+            equipos = Equipo.objects.filter(nombre__icontains=nombre_equipo)
+        return render(request, "ProyectoFinal/busqueda_jugador.html", {"listado_equipos": equipos})
+
+    return render(request, "ProyectoFinal/busqueda_jugador.html", {"listado_equipos": []})    
