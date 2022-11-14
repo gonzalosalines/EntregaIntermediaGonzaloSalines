@@ -11,12 +11,12 @@
 <p>Con la idea de facilitar el acceso a la informacion de los recursos disponibles para poder armar plantillas y realizar transferencias</p>
 
 ## Características de la aplicación
-<lu>Dar de alta Jugadores</lu>
+<ul>Dar de alta Jugadores</ul>
 
 
 ## Acceso al proyecto
 
-![Pagina-de-Inicio](http://127.0.0.1:8000/coder/inicio/)
+![Football Management Platform](http://127.0.0.1:8000/coder/inicio/)
 
 ## Tecnologías utilizadas
 <li>Python</li>
