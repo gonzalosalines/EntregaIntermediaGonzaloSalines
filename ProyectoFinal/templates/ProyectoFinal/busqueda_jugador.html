@@ -22,25 +22,3 @@
 
 {% endif %}
 
-<!-- Buscador Equipo -->
-
-<form method="get">
-
-    <p>
-        Club: <input type="text" name="nombre_equipo">
-    </p>
-    <input type="submit" value="Buscar">
-</form>
-
-
-{% if listado_equipos %}
-
-<ul>
-    {% for equipo in listado_equipos %}
-    <li>{{equipo.club}} {{equipo.ciudad}}</li>
-    {% endfor %}
-</ul>
-
-{% endif %}
-
-{% endblock %}

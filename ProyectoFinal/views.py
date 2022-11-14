@@ -68,6 +68,6 @@ def buscar_equipo(request):
             equipos = []
         else:
             equipos = Equipo.objects.filter(nombre__icontains=nombre_equipo)
-        return render(request, "ProyectoFinal/busqueda_jugador.html", {"listado_equipos": equipos})
+        return render(request, "ProyectoFinal/busqueda_equipos.html", {"listado_equipos": equipos})
 
-    return render(request, "ProyectoFinal/busqueda_jugador.html", {"listado_equipos": []})    
+    return render(request, "ProyectoFinal/busqueda_equipos.html", {"listado_equipos": []})    
