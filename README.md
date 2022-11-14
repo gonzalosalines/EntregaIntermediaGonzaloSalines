@@ -9,14 +9,31 @@
 ## Descripción del proyecto
 <p>Plataforma dedicada a gerenciamiento de jugadores, entrenadores y clubes de una misma zona</p>
 <p>Con la idea de facilitar el acceso a la informacion de los recursos disponibles para poder armar plantillas y realizar transferencias</p>
+<p>Cuenta con interfaz sencilla y amigable pero cumple con todos los requisitos necesarios para sacar el 100% de su funcionalidad</p>
 
-## Características de la aplicación
-`Alta de jugadores`: Agregar Jugadores a la base de datos
+## Características de la aplicación y Funcionalidades
+
+<p> En la plataforma se van a poder realizar las siguienes funciones </p>
+
+`Afiliación de jugadores`: Agregar Jugadores a la base de datos
+
+-Nombre Completo
 
 -Edad
 
 -Puesto
 
+`Alta Entrenadores`: Agregar Entrenadores a la base de datos
+
+-Nombre Completo
+
+-e-mail
+
+`Afiliar Club`: Agregar Club de la ciudad a la base de datos
+
+-Nombre Club
+
+-Ciudad del club
 
 ## Acceso al proyecto
 
@@ -30,12 +47,13 @@
 
 ## Personas Contribuyentes
 
-<p> Por el momento no estamos aceptando contribuyentes <p>
+<p> Por el momento no estamos aceptando contribuyentes </p>
+
 ## Personas-Desarrolladores del Proyecto
  
-*Gonzalo salines*
+**Gonzalo salines**
  
 ## Licencia
- * Pendiente*
+ *Pendiente*
 
 
