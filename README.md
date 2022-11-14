@@ -1,3 +1,3 @@
 # EntregaIntermediaGonzaloSalines
 
-![image](https://user-images.githubusercontent.com/9422713/201547339-e7e8c902-31c6-4501-8631-2ee5fc85fcdf.png)
+![image](https://user-images.githubusercontent.com/9422713/201786716-8c34681d-6330-446a-a612-9bf3dc8c36fa.png)
