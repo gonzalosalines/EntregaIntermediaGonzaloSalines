@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from ProyectoFinal.models import Equipo, Jugador, Entrenador
-from ProyectoFinal.forms import JugadorFormulario
+from ProyectoFinal.forms import JugadorFormulario, EquipoFormulario
 from django.shortcuts import render
 from django.template import loader # es realmente necesario?
 
@@ -41,3 +41,19 @@ def buscar_jugadores(request):
         return render(request, "ProyectoFinal/busqueda_jugador.html", {"listado_jugadores": jugadores})
 
     return render(request, "ProyectoFinal/busqueda_jugador.html", {"listado_jugadores": []})
+
+def creacion_equipo(request):
+
+    if request.method == "POST":
+        formulario = EquipoFormulario(request.POST)
+        
+        if formulario.is_valid():
+            # Accedemos al diccionario que contiene
+            # la informacion del formulario
+            data = formulario.cleaned_data
+
+            jugador = Equipo(club=data["club"], ciudad=data["ciudad"])
+            jugador.save()
+
+    formulario = EquipoFormulario()
+    return render(request, "ProyectoFinal/equipo_formulario.html", {"formulario": formulario})
