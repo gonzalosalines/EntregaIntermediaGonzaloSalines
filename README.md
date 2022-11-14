@@ -11,7 +11,9 @@
 <p>Con la idea de facilitar el acceso a la informacion de los recursos disponibles para poder armar plantillas y realizar transferencias</p>
 
 ## Características de la aplicación
-<ul>Dar de alta Jugadores</ul>
+`Alta de jugadores`: Agregar Jugadores a la base de datos
+-Edad
+-Puesto
 
 
 ## Acceso al proyecto
