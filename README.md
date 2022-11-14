@@ -4,22 +4,30 @@
 
  ![Badge en Desarollo](https://img.shields.io/badge/STATUS-DEV%20INPROGRESS-green)
  
- *[Índice](#índice)
 
-*[Descripción del proyecto](#descripción-del-proyecto)
 
-*[Estado del proyecto](#Estado-del-proyecto)
+## Descripción del proyecto
+<p>Plataforma dedicada a gerenciamiento de jugadores, entrenadores y clubes de una misma zona</p>
+<p>Con la idea de facilitar el acceso a la informacion de los recursos disponibles para poder armar plantillas y realizar transferencias</p>
 
-*[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
+## Características de la aplicación
+<lu>Dar de alta Jugadores</lu>
 
-*[Acceso al proyecto](#acceso-proyecto)
 
-*[Tecnologías utilizadas](#tecnologías-utilizadas)
+## Acceso al proyecto
 
-*[Personas Contribuyentes](#personas-contribuyentes)
+![http://127.0.0.1:8000/coder/inicio/] Pagina de Inicio
 
-*[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
+## Tecnologías utilizadas
+<li>Python</li>
+<li>Django Framework</li>
+<li>HTML</li>
+<li>CSS</li>
+## Personas Contribuyentes
+<p> Por el momento no estamos aceptando contribuyentes <p>
+## Personas-Desarrolladores del Proyecto
+*Gonzalo salines*
+## Licencia
+ * Pendiente*
 
-* [Licencia](#licencia)
 
-*[Conclusión](#conclusión)
