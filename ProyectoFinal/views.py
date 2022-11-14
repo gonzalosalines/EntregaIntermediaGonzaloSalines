@@ -31,7 +31,7 @@ def creacion_jugadores(request):
     return render(request, "ProyectoFinal/jugador_formulario.html", {"formulario": formulario})
 
 def buscar_jugadores(request):
-#creacion de buscado
+#creacion de buscador
     if request.GET:
         nombre_jugador = request.GET.get("nombre_jugador", "")
         if nombre_jugador == "":
