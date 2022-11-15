@@ -47,6 +47,8 @@ Nombre Club
 Ciudad del club
 ```
 
+`Busqueda`: Realizar busqueda de jugadores
+
 ## Acceso al proyecto 🚀 
 
 ![Football Management Platform](http://127.0.0.1:8000/coder/inicio/)
