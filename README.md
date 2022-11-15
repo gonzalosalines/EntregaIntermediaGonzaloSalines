@@ -53,7 +53,7 @@ Ciudad del club
 
 ## Acceso al proyecto 🚀 
 
-![Football Management Platform](http://127.0.0.1:8000/coder/inicio/)
+![Football Management Platform](http://127.0.0.1:8000/)
 
 ## Tecnologías utilizadas 🛠️
 <li>Python</li>
