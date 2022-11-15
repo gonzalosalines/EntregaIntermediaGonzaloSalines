@@ -18,7 +18,7 @@
 `Afiliación de jugadores`: Agregar Jugadores a la base de datos
 
 ```
--Nombre Completo
+Nombre Completo
 ```
 
 ```
@@ -30,15 +30,22 @@ Puesto
 
 `Alta Entrenadores`: Agregar Entrenadores a la base de datos
 
--Nombre Completo
+```
+Nombre Completo
+```
 
--e-mail
+```
+e-mail
+```
 
 `Afiliar Club`: Agregar Club de la ciudad a la base de datos
 
--Nombre Club
-
--Ciudad del club
+```
+Nombre Club
+```
+```
+Ciudad del club
+```
 
 ## Acceso al proyecto 🚀 
 
