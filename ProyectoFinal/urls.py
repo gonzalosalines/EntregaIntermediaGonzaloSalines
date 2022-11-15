@@ -1,6 +1,6 @@
 from django.urls import path
 from ProyectoFinal.views import *
-from ProyectoFinal import views   #posiblemente redundante
+#from ProyectoFinal import views   # redundante
 
 
 urlpatterns = [

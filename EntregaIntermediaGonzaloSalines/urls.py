@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from ProyectoFinal import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.inicio, name="Inicio"), #para q apenas abramos la pagina vaya al incio
     path('coder/', include("ProyectoFinal.urls"))
 ]

@@ -56,7 +56,7 @@ ROOT_URLCONF = 'EntregaIntermediaGonzaloSalines.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"G:\Gonzalo\Repositorios\EntregaIntermediaGonzaloSalines\EntregaIntermediaGonzaloSalines\ProyectoFinal\templates"],
+        'DIRS': [r"EntregaIntermediaGonzaloSalines\ProyectoFinal\templates\ProyectoFinal"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
