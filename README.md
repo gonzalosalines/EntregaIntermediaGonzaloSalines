@@ -63,7 +63,7 @@ Ciudad del club
 
 ## Personas-Desarrolladores del Proyecto ✒️
  
-**Gonzalo salines**
+**Gonzalo Salines**
  
 ## Licencia
  *Pendiente*
