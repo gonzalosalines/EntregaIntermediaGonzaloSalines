@@ -47,7 +47,9 @@ Nombre Club
 Ciudad del club
 ```
 
+
 `Busqueda`: Realizar busqueda de jugadores
+
 
 ## Acceso al proyecto 🚀 
 
