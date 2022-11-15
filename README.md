@@ -69,7 +69,7 @@ Ciudad del club
  
 **Gonzalo Salines**
  
-## Licencia
+## Licencia 📄
  *Pendiente*
 
 
