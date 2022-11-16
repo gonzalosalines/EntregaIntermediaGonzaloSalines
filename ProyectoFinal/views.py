@@ -95,7 +95,7 @@ def buscar_entrenadores(request):
         if nombre_entrenador == "":
             entrenadores = []
         else:
-            entrenadores = Jugador.objects.filter(nombre__icontains=nombre_entrenador)
+            entrenadores = Entrenador.objects.filter(nombre__icontains=nombre_entrenador)
         return render(request, "ProyectoFinal/busqueda_entrenador.html", {"listado_entrenadores": entrenadores})
 
     return render(request, "ProyectoFinal/busqueda_entrenador.html", {"listado_entrenadores": []})

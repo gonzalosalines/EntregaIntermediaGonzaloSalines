@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Footbal Management" />
         <meta name="author" content="Gonzalo Salines" />
-        <title>Proyecto Final Entrega Intermedia</title>
+        <title>Football Management</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'ProyectoFinal\css\styles.css' %}" rel="stylesheet" />
@@ -22,11 +22,11 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="{% url 'coder-inicio' %}">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'coder-jugadores' %}"> Jugadores </a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'coder-jugadores-crear' %}"> Alta de Jugadores </a></li>
+                       <!--  <li class="nav-item"><a class="nav-link" href="{% url 'coder-jugadores-crear' %}"> Alta de Jugadores </a></li> -->
                         <li class="nav-item"><a class="nav-link" href="{% url 'coder-jugadores-buscar' %}"> Buscar Jugador </a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'coder-equipo-crear' %}"> Afiliar Club </a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="{% url 'coder-equipo-crear' %}"> Afiliar Club </a></li> -->
                         <li class="nav-item"><a class="nav-link" href="{% url 'coder-equipo-buscar' %}"> Buscar Club </a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'coder-entrenadores-crear' %}"> Alta de Entrenadores</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="{% url 'coder-entrenadores-crear' %}"> Alta de Entrenadores</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="{% url 'coder-entrenadores-buscar' %}"> Buscar Entrenadores</a></li>
                     </ul>
                 </div>
@@ -35,10 +35,11 @@
         <!-- Header-->
         <header class="bg-primary bg-gradient text-white">
             <div class="container px-4 text-center">
-                <h1 class="fw-bolder">Proyecto Final - Entrega Intermedia</h1>
-                <p class="lead">Gestion de Plantel de futbol</p>
-                <a class="btn btn-lg btn-light" href="{% url 'coder-jugadores-crear' %}">Start adding players!</a>
-                <a class="btn btn-lg btn-light" href="{% url 'coder-equipo-crear' %}">Add a Football Club</a>
+                <h1 class="fw-bolder">Football Management</h1>
+                <p class="lead">Panel de Gestion</p>
+                <a class="btn btn-lg btn-light" href="{% url 'coder-jugadores-crear' %}">Afiliar jugadores!</a>
+                <a class="btn btn-lg btn-light" href="{% url 'coder-equipo-crear' %}">Afiliar Club!</a>
+                <a class="btn btn-lg btn-light" href="{% url 'coder-entrenadores-crear' %}">Alta de entrenador!</a>
             </div>
         </header>
 
