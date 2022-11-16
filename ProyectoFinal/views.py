@@ -87,3 +87,15 @@ def creacion_entrenadores(request):
 
     formulario = EntrenadorFormulario()
     return render(request, "ProyectoFinal/entrenador_formulario.html", {"formulario": formulario})
+
+def buscar_entrenadores(request):
+
+    if request.GET:
+        nombre_entrenador = request.GET.get("nombre_entrenador", "")
+        if nombre_entrenador == "":
+            entrenadores = []
+        else:
+            entrenadores = Jugador.objects.filter(nombre__icontains=nombre_entrenador)
+        return render(request, "ProyectoFinal/busqueda_entrenador.html", {"listado_entrenadores": entrenadores})
+
+    return render(request, "ProyectoFinal/busqueda_entrenador.html", {"listado_entrenadores": []})

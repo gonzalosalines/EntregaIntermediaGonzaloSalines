@@ -1,0 +1,43 @@
+{% extends 'ProyectoFinal/base.html' %}
+
+
+{% block contenido %}
+
+<form method="get">
+
+    <p>
+        Nombre Jugador: <input type="text" name="nombre_jugador">
+    </p>
+    <input type="submit" value="Buscar">
+</form>
+
+
+{% if listado_jugadores %}
+
+<table class="table table-dark" border="1px solid black">
+    <thead>
+      <tr>
+        <th scope="col" style="color: green;">Nombre</th>
+        <th scope="col" style="color: green;">Apellido</th>
+        <th scope="col" style="color: green;">E-mail</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+
+
+    {% for jugador in listado_entrenador %}
+    <tr>
+        <td style="font-style: italic;">{{entrenador.nombre}}</td>
+        <td>{{entrenador.apellido}}</td>
+        <td>{{entrenador.email}}</td>
+        
+      </tr>
+    
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endif %}
+
+{% endblock %}
