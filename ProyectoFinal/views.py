@@ -2,16 +2,23 @@ from django.http import HttpResponse
 from ProyectoFinal.models import Equipo, Jugador, Entrenador
 from ProyectoFinal.forms import JugadorFormulario, EquipoFormulario, EntrenadorFormulario
 from django.shortcuts import render
-from django.template import loader # es realmente necesario?
+from django.template import loader 
 
 # Create your views here.
 
 def inicio(request):
     return render(request, "ProyectoFinal/index.html")
 
-def jugadores(request):
+def lista_jugador(request):
+    
+    jugadores = Jugador.objects.all()
 
-    return render(request, "ProyectoFinal/jugadores.html")
+    tabla = {
+        "lista_jugador": jugadores
+    }
+    return render(request, "ProyectoFinal/jugadores.html", tabla)
+
+    #return render(request, "ProyectoFinal/busqueda_jugador.html", {"listado_jugadores": []})
 
 
 def creacion_jugadores(request):

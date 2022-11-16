@@ -5,7 +5,7 @@ from ProyectoFinal.views import *
 
 urlpatterns = [
     path("inicio/", inicio, name="coder-inicio"),
-    path("jugadores/", jugadores, name="coder-jugadores"),
+    path("jugadores/", lista_jugador, name="coder-jugadores"),
     path("jugador_formulario/", creacion_jugadores, name="coder-jugadores-crear"),
     path("busqueda_jugador.html/", buscar_jugadores, name="coder-jugadores-buscar"),
     path("equipo_formulario/", creacion_equipo, name="coder-equipo-crear"),
