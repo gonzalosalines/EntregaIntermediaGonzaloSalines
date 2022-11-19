@@ -3,6 +3,10 @@ from ProyectoFinal.models import Equipo, Jugador, Entrenador
 from ProyectoFinal.forms import JugadorFormulario, EquipoFormulario, EntrenadorFormulario
 from django.shortcuts import render
 from django.template import loader 
+from ProyectoFinal import BASE_DIR
+import os
+#CBV import
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 # Create your views here.
 
@@ -106,3 +110,10 @@ def buscar_entrenadores(request):
         return render(request, "ProyectoFinal/busqueda_entrenador.html", {"listado_entrenadores": entrenadores})
 
     return render(request, "ProyectoFinal/busqueda_entrenador.html", {"listado_entrenadores": []})
+
+class ClubCreation(CreateView):
+
+    model = Equipo
+    success_url = "coder/teams.html"
+    fields = ["club", "ciudad"]
+    template_name = "appcoder/team_form.html"

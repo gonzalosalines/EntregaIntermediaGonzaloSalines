@@ -12,4 +12,7 @@ urlpatterns = [
     path("busqueda_equipos.html/", buscar_equipo, name="coder-equipo-buscar"),
     path("entrenador_formulario/", creacion_entrenadores, name="coder-entrenadores-crear"),
     path("busqueda_entrenador.html/", buscar_entrenadores, name="coder-entrenadores-buscar"),
+
+    path("team/create/", ClubCreation.as_view(), name="coder-team-create"),
+
 ]
