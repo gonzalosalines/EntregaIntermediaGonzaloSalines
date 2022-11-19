@@ -111,14 +111,20 @@ def buscar_entrenadores(request):
 
     return render(request, "ProyectoFinal/busqueda_entrenador.html", {"listado_entrenadores": []})
 
+
+class ClubList(ListView):
+
+    model = Equipo
+    template_name = "ProyectoFinal/list_teams.html"
+
+class ClubDetail(DetailView):
+
+    model = Equipo
+    template_name = "ProyectoFinal/teams.html"
+
 class ClubCreation(CreateView):
 
     model = Equipo
     success_url = "coder/teams.html"
     fields = ["club", "ciudad"]
     template_name = "ProyectoFinal/team_form.html"
-
-class ClubList(ListView):
-
-    model = Equipo
-    template_name = "ProyectoFinal/teams.html"
