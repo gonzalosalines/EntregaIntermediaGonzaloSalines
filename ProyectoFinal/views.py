@@ -3,7 +3,7 @@ from ProyectoFinal.models import Equipo, Jugador, Entrenador
 from ProyectoFinal.forms import JugadorFormulario, EquipoFormulario, EntrenadorFormulario
 from django.shortcuts import render
 from django.template import loader 
-from ProyectoFinal import BASE_DIR
+#from ProyectoFinal import BASE_DIR
 import os
 #CBV import
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -116,4 +116,9 @@ class ClubCreation(CreateView):
     model = Equipo
     success_url = "coder/teams.html"
     fields = ["club", "ciudad"]
-    template_name = "appcoder/team_form.html"
+    template_name = "ProyectoFinal/team_form.html"
+
+class ClubList(ListView):
+
+    model = Equipo
+    template_name = "ProyectoFinal/teams.html"
