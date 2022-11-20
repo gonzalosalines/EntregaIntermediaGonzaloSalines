@@ -3,6 +3,8 @@ from ProyectoFinal.models import Equipo, Jugador, Entrenador
 from ProyectoFinal.forms import JugadorFormulario, EquipoFormulario, EntrenadorFormulario
 from django.shortcuts import render
 from django.template import loader 
+from django.urls import reverse_lazy #??
+
 #from ProyectoFinal import BASE_DIR
 import os
 #CBV import
@@ -120,22 +122,22 @@ class ClubList(ListView):
 class ClubDetail(DetailView):
 
     model = Equipo
-    template_name = "ProyectoFinal/teams.html"
+    template_name = "ProyectoFinal/list_teams.html"
 
 class ClubCreation(CreateView):
 
     model = Equipo
-    success_url = "coder/teams.html"
+    success_url = "coder/equipo.html"
     fields = ["club", "ciudad"]
-    template_name = "ProyectoFinal/team_form.html"
+    template_name = "ProyectoFinal/equipo_form.html"
 
 class ClubUpdate(UpdateView):
 
     model = Equipo
-    success_url = "/coder/teams/"
+    success_url = "/coder/equipo.html"
     fields = ["club", "ciudad"]
 
 class ClubDelete(DeleteView):
 
     model = Equipo
-    success_url = "/coder/teams/"
+    success_url = "/coder/equipo/"
