@@ -128,3 +128,14 @@ class ClubCreation(CreateView):
     success_url = "coder/teams.html"
     fields = ["club", "ciudad"]
     template_name = "ProyectoFinal/team_form.html"
+
+class ClubUpdate(UpdateView):
+
+    model = Equipo
+    success_url = "/coder/teams/"
+    fields = ["club", "ciudad"]
+
+class ClubDelete(DeleteView):
+
+    model = Equipo
+    success_url = "/coder/teams/"

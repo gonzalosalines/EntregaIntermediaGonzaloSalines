@@ -5,12 +5,12 @@
 <h1>Clubs</h1>
 
 <ul>
-    {% for team in object_list %}
+    {% for club in object_list %}
         <li>
-            {{team.club}} 
-            <a href="{% url 'coder-team-detail' team.id %}">Detalle</a> 
-            <!-- <a href="{% url 'coder-entregables-update' entregable.id %}">Actualizar</a> 
-            <a href="{% url 'coder-entregables-delete' entregable.id %}">Borrar</a>  -->
+            {{club.club}} 
+            <a href="{% url 'coder-team-detail' club.id %}">Detalle</a> 
+            <a href="{% url 'coder-team-update' club.id %}">Actualizar</a> 
+            <a href="{% url 'coder-team-delete' club.id %}">Borrar</a>
         </li>
     {% endfor %}
 </ul>

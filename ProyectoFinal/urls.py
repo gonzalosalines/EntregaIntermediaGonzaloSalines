@@ -13,8 +13,11 @@ urlpatterns = [
     path("entrenador_formulario/", creacion_entrenadores, name="coder-entrenadores-crear"),
     path("busqueda_entrenador.html/", buscar_entrenadores, name="coder-entrenadores-buscar"),
 
-    path("team/create/", ClubCreation.as_view(), name="coder-team-create"),
-    path("team/detail/<pk>/", ClubDetail.as_view(), name="coder-team-detail"),
     path("teams/", ClubList.as_view(), name="coder-teams"),
+    path("teams/detail/<pk>/", ClubDetail.as_view(), name="coder-team-detail"),
+    path("teams/create/", ClubCreation.as_view(), name="coder-team-create"),
+    path("teams/update/<pk>/", ClubUpdate.as_view(), name="coder-team-update"),
+    path("entregables/delete/<pk>/", ClubDelete.as_view(), name="coder-team-delete"),
+    
 
 ]
